@@ -1,5 +1,7 @@
 #include<iostream>
 using namespace std;
+
+
 int binsearch(int arr[], int  l,int r, int target)
 {
     int mid;
@@ -22,14 +24,15 @@ int n; cout << "enter n" << endl;
     cin >> n;
     int a[n];
     cout << "enter array" << endl;
+     for(int i=0;i<n;i++)
+    {
+        cin >> a[i];
+    }
     int x;
     cout << "enter element to be searched" << endl;
     cin >> x;
 
-    for(int i=0;i<n;i++)
-    {
-        cin >> a[i];
-    }
+   
     sort(a,a+10);
     if(binsearch(a,0,n,x) == -1)
     {
